@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Store1Module } from './store1'; 
 import { RootStoreModule } from './root-store/root-store.module';
+import { Store2Module } from './store2';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RootStoreModule } from './root-store/root-store.module';
     FlexLayoutModule, 
     RootStoreModule,
     Store1Module, 
+    Store2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

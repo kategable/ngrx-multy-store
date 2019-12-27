@@ -10,16 +10,18 @@
         </div>
       </div>
     </div>
-    <div fxFlex="60" class="sec2"  (click)="getItems1()">
+    <div fxFlex="60" class="sec2" (click)="getItems1()">
       second-section
-      <div >
-        <div *ngFor="let item of items1$ | async">
-          {{item.id}} | {{item.name}}
-        </div>
+
+      <div *ngFor="let item of items1$ | async">
+        {{item.id}} | {{item.name}}
       </div>
     </div>
-    <div fxFlex="20" class="sec3" fxFlex.xs="15">
+    <div fxFlex="20" class="sec3" fxFlex.xs="15" (click)="getItems2()">
       third-section
+      <div *ngFor="let item of items2$ | async">
+        {{item.id}} | {{item.name}}
+      </div>
     </div>
 
   </div>
