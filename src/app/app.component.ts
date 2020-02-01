@@ -25,8 +25,8 @@ export class AppComponent {
     this.store.dispatch(new StoreActions.Initialize());
 
     this.items$ = this.store.select(getItems);
-    this.items1$ = this.store.select(getItems1);
-    this.items2$ = this.store.select(getItems2);
+    this.items1$ = this.store1.select(getItems1);
+    this.items2$ = this.store2.select(getItems2);
 
   }
 
