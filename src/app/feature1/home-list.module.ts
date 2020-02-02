@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeListComponent } from './home-list/home-list.component';
 import { HomeListRoutingModule } from './home-list-routing.module';
 import { HomeDetailComponent } from './home-detail/home-detail.component';
+import { Store1Module } from './store1';
 
 
 
@@ -10,7 +11,8 @@ import { HomeDetailComponent } from './home-detail/home-detail.component';
   declarations: [HomeListComponent, HomeDetailComponent],
   imports: [
     CommonModule,
-    HomeListRoutingModule
+    HomeListRoutingModule,
+    Store1Module
   ]
 })
 export class HomeListModule { }
