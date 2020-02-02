@@ -7,3 +7,8 @@ export const getItems1 = createSelector(
     getStore1FeatureState,
     state => state.items
 );
+
+export const getSelectedItem  = (id) => createSelector(
+    getStore1FeatureState,
+    state => state.items.find(i=>i.id==id)
+)

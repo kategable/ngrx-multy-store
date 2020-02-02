@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { State, getItems } from './root-store';
 import * as StoreActions from './root-store/actions'; 
-import * as StoreActions1 from './store1/store1.actions'; 
-import * as StoreActions2 from './store2/store2.actions'; 
-import { Store1State } from './store1/store1.state';
-import { Store2State } from './store2/store2.state';
-import { getItems1 } from './store1/store1.selectors';
-import { getItems2 } from './store2/store2.selectors';
+import * as StoreActions1 from './feature1/store1/store1.actions'; 
+import * as StoreActions2 from './feature2/store2/store2.actions'; 
+import { Store1State } from './feature1/store1/store1.state';
+import { Store2State } from './feature2/store2/store2.state';
+import { getItems1 } from './feature1/store1/store1.selectors';
+import { getItems2 } from './feature2/store2/store2.selectors';
 
 @Component({
   selector: 'app-root',

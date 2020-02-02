@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<div class="bounds">
+
+    <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+  
+      <div fxFlex="20"  fxFlex.xs="15" >       
+        <div >
+          <ul class="items">
+            <li *ngFor="let item of items$ | async"
+              [class.selected]="item.id === selectedId">
+              <a [routerLink]="['/homes', item.id]">
+                <span class="badge">{{ item.id }}:</span>{{ item.name }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <router-outlet></router-outlet>
+  </div>

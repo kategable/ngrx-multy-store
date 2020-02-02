@@ -1,29 +1,8 @@
-<div class="bounds">
 
-  <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
-
-    <div fxFlex="20" class="sec1" fxFlex.xs="15" (click)="getItems()">
-      first-section
-      <div *ngIf="show">
-        <div *ngFor="let item of items$ | async">
-          {{item.id}} | {{item.name}}
-        </div>
-      </div>
-    </div>
-    <div fxFlex="60" class="sec2" (click)="getItems1()">
-      second-section
-
-      <div *ngFor="let item of items1$ | async">
-        {{item.id}} | {{item.name}}
-      </div>
-    </div>
-    <div fxFlex="20" class="sec3" fxFlex.xs="15" (click)="getItems2()">
-      third-section
-      <div *ngFor="let item of items2$ | async">
-        {{item.id}} | {{item.name}}
-      </div>
-    </div>
-
-  </div>
-
-</div>
+<h1>Home Founder</h1>
+<nav>
+  <nav>
+    <a routerLink="/homes" routerLinkActive="active">Homes</a> 
+  </nav>
+</nav>
+<router-outlet></router-outlet>
